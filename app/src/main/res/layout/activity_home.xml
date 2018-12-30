@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="273dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@drawable/grillmark" />
+
+    <Button
+        android:id="@+id/menubut"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="138dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/anton"
+        android:onClick="menuClick"
+        android:text="Menu"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/delivery"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/anton"
+        android:onClick="deliveryClick"
+        android:text="DELVERY"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/locbut"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="138dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/anton"
+        android:onClick="locClick"
+        android:text="OUR LOCATION"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="17dp"
+        android:background="@android:color/background_dark"
+        android:clickable="true"
+        android:onClick="instaClick"
+        app:srcCompat="@drawable/instagram" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black"
+        android:clickable="true"
+        android:onClick="snapClick"
+        app:srcCompat="@drawable/snapchattt" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="55dp"
+        android:background="@android:color/black"
+        android:clickable="true"
+        android:onClick="faceClick"
+        app:srcCompat="@drawable/facebookk" />
+
+</RelativeLayout>

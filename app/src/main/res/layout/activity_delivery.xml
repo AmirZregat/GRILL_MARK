@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".deliveryActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        app:srcCompat="@drawable/grillmark" />
+
+    <ImageButton
+        android:id="@+id/backBut"
+        android:layout_width="38dp"
+        android:layout_height="39dp"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="34dp"
+        android:background="@android:color/black"
+        android:onClick="backClick"
+        app:srcCompat="@drawable/leftarrow" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="226dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Amman Branch"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="74dp"
+        android:text="0795258181"
+        android:textColor="@android:color/background_light"
+        android:textSize="27sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Irbid Branch"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="78dp"
+        android:text="0799717292"
+        android:textColor="@android:color/background_light"
+        android:textSize="27sp"
+        android:textStyle="bold|italic" />
+
+    <ImageButton
+        android:id="@+id/ammanCallBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/backBut"
+        android:layout_below="@+id/textView"
+        android:background="@android:color/black"
+        android:onClick="FcallClick"
+        app:srcCompat="@drawable/telephone" />
+
+    <ImageButton
+        android:id="@+id/IrbidCallBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ammanCallBut"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginBottom="78dp"
+        android:background="@android:color/black"
+        android:onClick="ScallClick"
+        app:srcCompat="@drawable/telephone" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="219dp"
+        android:layout_height="130dp"
+        android:layout_above="@+id/textView"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="-226dp"
+        app:srcCompat="@drawable/delivery" />
+</RelativeLayout>

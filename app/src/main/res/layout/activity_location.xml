@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/irbidLocBut"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".locationActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/grillmark" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="23dp"
+        android:background="@android:color/black"
+        android:onClick="backClick"
+        app:srcCompat="@drawable/leftarrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/amman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="137dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Amman Branch"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/irbid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toEndOf="@+id/ammanLocBut"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/ammanLocBut"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="116dp"
+        android:background="@android:color/black"
+        android:onClick="ammanLocClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/placeholder" />
+
+    <TextView
+        android:id="@+id/irbid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="164dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Irbid Branch"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toEndOf="@+id/imageButton6" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/black"
+        android:onClick="IrbidLocClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ammanLocBut"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/placeholder" />
+</android.support.constraint.ConstraintLayout>
